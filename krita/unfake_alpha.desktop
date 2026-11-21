@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=unfake_alpha
+X-Python-2-Compatible=false
+X-Krita-Manual=Manual.html
+Name=Unfake Alpha
+Comment=Turn a painted-on transparency checkerboard (or a flat painted background) into real transparency, on a new layer

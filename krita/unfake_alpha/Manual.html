@@ -1,0 +1,15 @@
+<h3>Unfake Alpha</h3>
+<p>For generated images that come with a <em>painted</em> transparency checkerboard (or a flat painted background):
+it rebuilds the checker behind every pixel, treats grey pixels between the checker's two shades as background (which
+also takes the AI watermark's pixel nudges with it), and runs "colour to alpha" on everything else, so glows keep
+their soft edges as real transparency.</p>
+<p><b>Tools &gt; Scripts &gt; Unfake Alpha...</b> with the image's paint layer selected (8-bit RGBA). The result goes on
+a new layer above it; the original is only hidden. To undo, delete the new layer.</p>
+<ul>
+<li><b>Background:</b> find the checkerboard (automatic), or a flat colour such as #000000.</li>
+<li><b>Floor:</b> opacity under this becomes fully transparent (default 0.03, 3%).</li>
+</ul>
+<p>Limits: grey art on a grey checker can't be told apart from it; soft hazes come out a little fainter than painted
+(the safe guess for opacity is the least that explains each pixel). The full walkthrough is in the
+<a href="https://github.com/agoramachina/unfake-alpha">README</a>.</p>
+<p><a href="https://github.com/agoramachina/unfake-alpha">unfake-alpha</a> by AM (agoramachina) with Lintel (Claude Opus 5.5). MIT licence.</p>
